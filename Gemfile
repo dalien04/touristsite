@@ -8,7 +8,6 @@ gem 'bcrypt'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-gem 'pg'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
