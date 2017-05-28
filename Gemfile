@@ -9,9 +9,9 @@ gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'pg'
-gem 'sqlite3'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'listen', '3.1.1'
   gem 'guard-rspec'
