@@ -1,25 +1,51 @@
 <header id="fh5co-header-section" class="sticky-banner">
-  <div class="container">
-    <div class="nav-header">
-       <%= link_to "МИРАБЕЛА", root_path, id: "logo" %>
-       <nav id="fh5co-menu-wrap" role="navigation">
-        <ul class="nav pull-right" id="firstul">
+      <div class="container">
+        <div class="nav-header">
+          <div class="top-logotip col-md-4 col-sm-4 col-xs-12">
+          <%= link_to "Мирабела-Тур", root_path, id: "logo" %>
+          </div>
 
-        
-          <li><%= link_to "Помощь", help_path %></li>
-          <li><%= link_to "Личный кабинет", signup_path %></li>
-        </ul>  
-        <ul class="nav pull-left" id="secondul">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Поиск тура", "#" %></li>
-          <li><%= link_to "Страны и города", "#" %></li>
-          <li><%= link_to "Фотогалерея", photogallery_path %></li>
-          <li><%= link_to "Информация туристам", information_path %></li>
-          <li><%= link_to "О компании", about_path %></li>
-          <li><%= link_to "Контакты", contact_path %></li>
+           <div class="top-informat col-md-4 col-sm-4 col-xs-12">
+            <p> Часы работы </p>
+            <p>С 9:00 до 20:00</p>
+            <p> Телефон</p>
+            <p>+7 (909) 960 35 11</p>
+            </div>
 
-        </ul>
-      </nav>
-     </div> 
-    </div>
-  </header>
+            <div class="top-spisok col-md-4 col-sm-4 col-xs-12">
+              <ul class="nav " id="firstul">
+                <li><%= link_to "Личный кабинет", signup_path %></li>
+                <li><%= link_to "Регистрация", signup_path %></li>
+                <li><%= link_to "Помощь", help_path %></li>
+               </ul>  
+            </div>
+
+           
+            <div class="top-menu ">
+             <ul class="nav pull-left" id="secondul">
+              <li><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Поиск тура", "#" %></li>
+              <li><%= link_to "Страны и города", "#" %></li>
+              <li><%= link_to "Фотогалерея", photogallery_path%></li>
+              <li><%= link_to "Туристу", information_path %></li>
+              <li><%= link_to "О компании", about_path %></li>
+              <li><%= link_to "Контакты", contact_path %></li>
+
+               <%# <a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Family</a></li>
+                  <li><a href="#">CSS3 &amp; HTML5</a></li>
+                  <li><a href="#">Angular JS</a></li>
+                  <li><a href="#">Node JS</a></li>
+                  <li><a href="#">Django &amp; Python</a></li>
+                </ul>
+              %>
+            </ul>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </header>

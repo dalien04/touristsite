@@ -1,35 +1,43 @@
-
-<footer class="footer-map">
-            <div class="footer-block1">
-                <dl>
-                    <dt>Услуги</dt>
-            <dd><%= link_to "Подбор тура", tourRequest_path %></dd>
-            </dl>
+<footer>
+                <div class="container">
+                    <div class="footer-map">
+                        <div class="col-md-3 col-sm-3 col-xs-12 footer-block1">
+                            <h3>Услуги</h3>
+                            <ul>
+                                <li><%= link_to "Подбор тура", tourRequest_path %></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 footer-block1">
+                            <h3>Страны</h3>
+                            <ul>
+                                <li><%= link_to "Россия", "#" %></li>
+                                <li><%= link_to "Абхазия", "#" %></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 footer-block1">
+                            <h3>Клиентам</h3>
+                            <ul>
+                                <li><%= link_to "Просмотреть договор", checkstatus_path %></li>
+                                <li><%= link_to "Частые вопросы", faq_path %></li>
+                                <li><%= link_to "Фотогалерея", photogallery_path %></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 footer-block1">
+                            <h3>Компания</h3>
+                            <ul>
+                                <li><%= link_to "О компании", about_path %></li>
+                                <li><%= link_to "Отзывы клиентов", reviews_path %></li>
+                                <li><%= link_to "Контактная информация", contact_path %></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="name">
+                        <p>Mirabela,2017</p>
+                    </div>
+                    <div class="mail">
+                        <p>belir@mail.ru</p> 
+                    </div>
+                </div>
+               
             </div>
-
-            <div class="footer-block2">
-                <dl>
-                    <dt>Страны</dt>
-            
-            </dl>
-            </div>
-
-            <div class="footer-block3">
-                <dl>
-                    <dt>Клиентам</dt>
-            <dd><%= link_to "Просмотреть договор", checkstatus_path %></dd>
-            <dd><%= link_to "Частые вопросы", faq_path %></dd>
-            <dd><%= link_to "Фотогалерея", photogallery_path %></dd>
-            </dl>
-            </div>
-
-
-            <div class="footer-block4">
-                <dl>
-                    <dt>Компания</dt>
-            <dd><%= link_to "О компании", about_path %></dd>
-            <dd><%= link_to "Отзывы клиентов", reviews_path %></dd>
-            <dd><%= link_to "Контактная информация", contact_path %></dd>
-            </dl>
-            </div>
-</footer>
+        </footer>

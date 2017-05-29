@@ -3,117 +3,149 @@
 html{
 	overflow-y: scroll;
 }
-
-body {
-    font-family: "Open Sans", Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 16px;
-    background: #fff;
-    color: #848484;
-    font-weight: 300;
-    overflow-x: hidden;
+body{
+ background: #E8BB99
+ /* background: linear-gradient(to right, rgba(255, 62, 28, 0.5) 0%, rgba(255, 140, 0, 0.7) 100%);
+  */
 }
-section{
-	overflow: auto;
+	
+.sticky-banner{
+	 border: solid 1px #F78536;
+ background: #F1ECEB;
 }
 
-textarea {
-	resize: vertical;
-}
-
-.center {
-	text-align: center;
-}
-
-.center h1{
-	margin-bottom: 10px;
-}
-
-/* typograhy */
-
-h1,h2,h3,h4,h5,h6 {
-	line-height: 1;
-}
-
-h1{
-	font-size: 3em;
-	letter-spacing: -2px;
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-h2{
-	font-size: 1.2em;
+.top-logotip{
 	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
-	color: gray;
-}
-
-/* header*/
-
-
-#logo {
-	float: left;
-	margin-right: 10px;
-	color:#27ae60;
-	text-transform: uppercase;
-	letter-spacing: -1px;
-	font-size: 3em;
-	padding-top: 9px;
-	font-weight: bold;
-	line-height: 1;
-	&:hover {
-		color: #ecf0f1;
-		text-decoration: none;
+  	padding-top: 70px;
+ 	font-weight: bold;
+  	line-height: 1;
+  	
+  	a{ 
+  		font-size: 60px;
+  		color: #F78536!important;
+ 		font-family: 'Marck Script', cursive!important;
 	}
 }
 
-/* footer */
+.top-informat {
+ text-align:center;
+ color: #69696C;
+ font-family: 'Marck Script', cursive;
+ font-size:27px;
 
-footer{
-	
-	border-top: 1px solid $gray;
-	clear: both;
-	background: #393e46;
-  	padding: 60px 0 40px;
-	
 }
-.footer-map>div{
-	float: left;
+
+.top-spisok{
+	text-align:center;
 }
 
 
+#firstul {
+ font-size: 27px;
 
-.footer-block1 {
-    margin-left: 40px;
-    width: 180px;
-    margin-right: 18px;
-    padding-left: 20px;
+ a{ 
+  		color: #69696C;
+ 		font-family: 'Marck Script', cursive!important;
+	}
+	a:hover{
+	color: #F78536;
+
+	}
+}
+#secondul li {
+ }
+
+#secondul {
+ font-size: 18px;
+ padding: 0;
+ margin: 0 auto;
+ border: outset 5px #F78536;
+ border-collapse: collapse;
+
+ 
+}
+#secondul ul {
+ list-style: none;
+ margin: 0;
+ padding: 0
+}
+#secondul li {
+ border: outset 1px #FF9900;
+ display: inline;
+ float: left;
+ font-size: 27.5px;
+
+	a{ 
+  		color: #69696C;
+ 		font-family: 'Marck Script', cursive!important;
+	}
+a:hover{
+	color: #F78536;
+}
 }
 
-.footer-block2 {
-    margin-left: 40px;
-    width: 180px;
-    margin-right: 18px;
-    padding-left: 20px;
-    border-left: 1px solid #d3d3d3;
+
+
+footer {
+  background: #393e46;
+  border: outset 5px #F78536;
 }
-.footer-block3 {
-    margin-left: 40px;
-     width: 180px;
-    margin-right: 18px;
-    padding-left: 20px;
-    border-left: 1px solid #d3d3d3;
+footer p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
 }
-.footer-block4 {
-    margin-left: 40px;
-     width: 180px;
-    margin-right: 18px;
-    padding-left: 20px;
-    border-left: 1px solid #d3d3d3;
+footer p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer p a:hover, footer p a:active, footer p a:focus {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+footer .footer-block1 {
+  padding-bottom: 30px;
+  a{ 
+  		color: #69696C;
+ 		font-family: 'Marck Script', cursive!important;
+	}
+	a:hover{
+	color: #F78536;
+
+	}
+}
+footer .footer-block1 h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+footer .footer-block1 li, footer .footer-block1 ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footer-block1 li {
+  list-style: none;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  font-size: 25px;
+}
+footer .footer-block1 li a {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .footer-block1 li a:hover, footer .footer-block1 li a:active, footer .footer-block1 li a:focus {
+  color: #fff !important;
+}
+
+
+.name {
+	float:right;
+	padding-right: 20px; 
+}
+.mail {
+	float:left;
+	padding-left: 20px;
 }
 
 
 
+.home-table{
+	border: outset 5px #F78536;
+}
