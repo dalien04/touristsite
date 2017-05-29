@@ -1,12 +1,35 @@
-<footer class="footer">
-	<small>
-	Nikita Belski
-	</small>
-	<nav>
-		<ul>
-			<li><%= link_to "About", about_path %></li>
-			<li><%= link_to "Contact", '#' %></li>
-			<li>News</li>
-		</ul>
-	</nav>
+
+<footer class="footer-map">
+            <div class="footer-block1">
+                <dl>
+                    <dt>Услуги</dt>
+            <dd><%= link_to "Подбор тура", tourRequest_path %></dd>
+            </dl>
+            </div>
+
+            <div class="footer-block2">
+                <dl>
+                    <dt>Страны</dt>
+            
+            </dl>
+            </div>
+
+            <div class="footer-block3">
+                <dl>
+                    <dt>Клиентам</dt>
+            <dd><%= link_to "Просмотреть договор", checkstatus_path %></dd>
+            <dd><%= link_to "Частые вопросы", faq_path %></dd>
+            <dd><%= link_to "Фотогалерея", photogallery_path %></dd>
+            </dl>
+            </div>
+
+
+            <div class="footer-block4">
+                <dl>
+                    <dt>Компания</dt>
+            <dd><%= link_to "О компании", about_path %></dd>
+            <dd><%= link_to "Отзывы клиентов", reviews_path %></dd>
+            <dd><%= link_to "Контактная информация", contact_path %></dd>
+            </dl>
+            </div>
 </footer>
