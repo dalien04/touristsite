@@ -6,9 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic" rel="stylesheet">
-<%= javascript_include_tag 'bootstrap-datepicker', 'data-turbolinks-track' => true %>
-<%= stylesheet_link_tag "bootstrap-datepicker", media: "all" %>
 
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<%= javascript_include_tag "jquery-1.11.0.min.js" %>
+<%= javascript_include_tag "jquery.leanModal.min.js" %>
   <%= render 'layouts/shim' %>
 </head>
 <body>
@@ -16,6 +20,7 @@
   <div class="container">
     <%= yield %>
     <%= render 'layouts/footer' %>
+    <%= debug(params) if Rails.env.development? %>
   </div>
   
 </body>
