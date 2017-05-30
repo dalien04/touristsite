@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic" rel="stylesheet">
+<%= javascript_include_tag 'bootstrap-datepicker', 'data-turbolinks-track' => true %>
+<%= stylesheet_link_tag "bootstrap-datepicker", media: "all" %>
+
   <%= render 'layouts/shim' %>
 </head>
 <body>
@@ -14,5 +17,6 @@
     <%= yield %>
     <%= render 'layouts/footer' %>
   </div>
+  
 </body>
 </html>
