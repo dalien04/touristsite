@@ -15,8 +15,8 @@
 
             <div class="top-spisok col-md-4 col-sm-4 col-xs-12">
               <ul class="nav " id="firstul">
-                <li><%= link_to "Личный кабинет", signup_path %></li>
-                <li><%= link_to "Регистрация", signup_path %></li>
+                <li><%= link_to "Личный кабинет", signup_path  %></li>
+                <li><%= link_to "Регистрация", "#modal" , id:"modal_trigger" %></li>
                 <li><%= link_to "Помощь", help_path %></li>
                </ul>  
             </div>
@@ -28,9 +28,10 @@
               <li><%= link_to "Поиск тура", "#" %></li>
               <li><%= link_to "Страны и города", "#" %></li>
               <li><%= link_to "Фотогалерея", photogallery_path%></li>
+              <li><%= link_to "Сотруднику", "#" %></li>
               <li><%= link_to "Туристу", information_path %></li>
               <li><%= link_to "О компании", about_path %></li>
-              <li><%= link_to "Контакты", contact_path %></li>
+              
 
                <%# <a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
                 <ul class="fh5co-sub-menu">
