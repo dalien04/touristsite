@@ -4,6 +4,8 @@
   <h1>Авторизация</h1> %>
  <%#  <%= link_to "Войти в систему", signup_path, class: "btn btn-large btn-primary" %>
 
+
+
  
  <div id="modal" class="popupContainer" style="display:none;">
                 <header class="popupHeader">
@@ -14,22 +16,10 @@
                 <section class="popupBody">
                         <!-- Social Login -->
                         <div class="social_login">
-                                <div class="">
-                                        
-
-                                        <a href="#" class="social_box google">
-                                                <span class="icon"><i class="fa fa-google-plus"></i></span>
-                                                <span class="icon_title">Подключится с помощью Google</span>
-                                        </a>
-                                </div>
-
-                                <div class="centeredText">
-                                        <span>С помощью Email</span>
-                                </div>
 
                                 <div class="action_btns">
-                                        <div class="one_half"><a href="#" id="login_form" class="btn">Войти под аккаунт</a></div>
-                                        <div class="one_half last"><a href="#" id="register_form" class="btn">Зарегистрироваться</a></div>
+                                        <div class="one_half"><%= link_to 'Войти', new_user_session_path , id:"login_form", class:"btn" %>
+                                        <div class="one_half last"><a href="#" id="register_form" class="btn">Регистрация</a></div>
                                 </div>
                         </div>
 

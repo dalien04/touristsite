@@ -15,9 +15,18 @@
 
             <div class="top-spisok col-md-4 col-sm-4 col-xs-12">
               <ul class="nav " id="firstul">
-                <li><%= link_to "Личный кабинет", signup_path  %></li>
-                <li><%= link_to "Регистрация", "#modal" , id:"modal_trigger" %></li>
-                <li><%= link_to "Помощь", help_path %></li>
+                
+                <li>
+                <% if current_user %>
+                  <%= "Привет, #{current_user.email}" %>
+                  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                <% else %>
+                  <%= link_to "Авторизация", "#sign_in", "data-toggle" => "modal" %>
+                  
+                  <%= link_to "Регистрация", "#sign_up", "data-toggle" => "modal" %>
+                <% end %>
+                </li>
+                <li><%= link_to "Помощь", "#" %></li>
                </ul>  
             </div>
 
@@ -26,7 +35,6 @@
              <ul class="nav pull-left" id="secondul">
               <li><%= link_to "Home", root_path %></li>
               <li><%= link_to "Поиск тура", "#" %></li>
-              <li><%= link_to "Страны и города", "#" %></li>
               <li><%= link_to "Фотогалерея", photogallery_path%></li>
               <li><%= link_to "Сотруднику", "#" %></li>
               <li><%= link_to "Туристу", information_path %></li>

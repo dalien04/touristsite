@@ -3,11 +3,19 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-gem 'bootstrap-sass', '3.3.6'
+gem 'jquery-rails'
+gem 'bootstrap-modal-rails'
+gem 'bootstrap-sass'
+gem 'sprockets', '3.6.3'
+gem 'less-rails'
+gem 'therubyracer'
 gem 'bcrypt'
 gem 'faker'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'devise'
+gem 'json'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
@@ -35,7 +43,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
