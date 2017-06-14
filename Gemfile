@@ -10,24 +10,9 @@ gem 'sprockets', '3.6.3'
 gem 'less-rails'
 gem 'therubyracer'
 gem 'bcrypt'
-gem 'faker'
-gem 'will_paginate'
-gem 'bootstrap-will_paginate'
 gem 'devise'
 gem 'json'
-
-# Use sqlite3 as the database for Active Record
-group :development, :test do
-  gem 'sqlite3'
-  gem 'rspec-rails'
-  gem 'listen', '3.1.1'
-  gem 'guard-rspec'
-end
-
-group :test do
-  gem 'selenium-webdriver'
-  gem 'capybara'
-end
+gem 'simple_form'
 
 
   gem 'pg'

@@ -1,0 +1,32 @@
+<table class="table">
+<thead>
+	<tr>
+		<th>Заявка Номер</th>
+		<th><%= @request.id %></th>
+	</tr>
+
+</thead>
+<tbody>
+	<tr>
+		<td>Дата открытия</td>
+		<td><%= @request.open_date %></td>
+	</tr>
+
+	<tr>
+		<td>Дата закрытия</td>
+		<td><%= @request.close_date %></td>
+	</tr>
+
+	<tr>
+		<td>Статус</td>
+		<td><%= @request.status %></td>
+	</tr>
+
+	<tr>
+		<td>Дополнительная информация</td>
+		<td><%= @request.dop_info %></td>
+	</tr>
+</tbody>
+
+
+</table>

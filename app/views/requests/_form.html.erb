@@ -1,0 +1,10 @@
+<%= simple_form_for(@request) do |f| %>
+<%= f.error_notification %>
+<%= f.input :open_date,:label => "Дата открытия"  %>
+<%= f.input :close_date,:label => "Дата закрытия" %>
+<%= f.input :dop_info,:label => "Дополнительная информация"  %>
+<%= f.input :status,:label => "Статус" %>
+
+
+<%= f.button :submit %>
+<% end %>

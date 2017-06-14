@@ -7,11 +7,17 @@
   <%= csrf_meta_tags %>
   <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+   
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <%= javascript_include_tag 'welcome.js.coffee' %>
-  <%= javascript_include_tag 'blogs'%>
-  <%= javascript_include_tag :all %>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
 
 
   <%= render 'layouts/shim' %>
@@ -67,10 +73,19 @@ style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" tit
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/44832625" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
- 
 
+<script type="text/javascript">
+  $( function() {
+    $( "#datepicker" ).datepicker({range: 'multiple'});
 
+  } );
+</script>
+<script type="text/javascript">
+  $( function() {
+    $( "#datepicker2" ).datepicker({range: 'multiple'});
 
+  } );
+</script>
 
 
 

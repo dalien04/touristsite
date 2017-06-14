@@ -19,7 +19,7 @@
                 <li>
                 <% if current_user %>
                   <%= "Привет, #{current_user.email}" %>
-                  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+                  <%= link_to "Выйти", destroy_user_session_path, :method => :delete %>
                 <% else %>
                   <%= link_to "Авторизация", "#sign_in", "data-toggle" => "modal" %>
                   
@@ -34,10 +34,11 @@
             <div class="top-menu ">
              <ul class="nav pull-left" id="secondul">
               <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Поиск тура", "#" %></li>
+              <li><%= link_to "Поиск тура", tourRequest_path %></li>
               <li><%= link_to "Фотогалерея", photogallery_path%></li>
               <li><%= link_to "Сотруднику", "#" %></li>
-              <li><%= link_to "Туристу", information_path %></li>
+              <li><%= link_to "Туристу", information_path, id:"form_sub", class:"fh5co-sub-ddown" %>
+              </li>
               <li><%= link_to "О компании", about_path %></li>
               
 
@@ -49,6 +50,17 @@
                   <li><a href="#">Node JS</a></li>
                   <li><a href="#">Django &amp; Python</a></li>
                 </ul>
+
+
+                <ul class="fh5co-sub-menu">
+                  <li><a href="#">Family</a></li>
+                  <li><a href="#">CSS3 &amp; HTML5</a></li>
+                  <li><a href="#">Angular JS</a></li>
+                  <li><a href="#">Node JS</a></li>
+                  <li><a href="#">Django &amp; Python</a></li>
+                </ul>
+
+
               %>
             </ul>
           </div>

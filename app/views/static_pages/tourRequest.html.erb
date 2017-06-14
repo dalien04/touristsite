@@ -1,2 +1,181 @@
-<h1>StaticPages#tourRequest</h1>
-<p>Find me in app/views/static_pages/tourRequest.html.erb</p>
+<div class="fh5co-hero toptour">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+				<div class="desc">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-sm-9 col-md-9">
+								<div class="tabulation animate-box">
+
+								  <!-- Nav tabs -->
+								   <ul class="nav nav-tabs" role="tablist">
+								      <li role="presentation" class="active">
+								      	<a href="#" aria-controls="searchTour" role="tab" data-toggle="tab">Подбор тура</a>
+								      </li>
+								   </ul>
+
+								   <!-- Tab panes -->
+									<div class="tab-content">
+									 <div role="tabpanel" class="tab-pane active" id="flights">
+										<div class="row">
+
+											<div class="col-xxs-12 col-xs-4 mt">
+												<div class="input-field">
+													<label for="from">Откуда</label>
+													<input type="text" class="form-control" id="from-place" placeholder="Москва,Волгоград"/>
+												</div>
+											</div>
+
+											<div class="col-xxs-12 col-xs-4 mt alternate">
+												<div class="input-field">
+													<label for="date-start">Дата начала</label>
+													<input type="text" class="form-control" id="datepicker" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+
+											<div class="col-xxs-12 col-xs-4 mt ">
+												<div class="input-field">
+													<label for="date-end">Дата окончания</label>
+													<input type="text" class="form-control" id="datepicker2" placeholder="mm/dd/yyyy"/>
+												</div>
+											</div>
+
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">Страна</label>
+													<input type="text" class="form-control" id="to-country" placeholder="Абхазия,Россия"/>
+												</div>
+											</div>
+
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">Город</label>
+													<input type="text" class="form-control" id="to-city" placeholder="Сухум,Барнаул"/>
+												</div>
+											</div>
+
+											<div class="ol-xxs-12 col-xs-6 mt ">
+												<section>
+													<label for="class">Категория отеля </label>
+													<select class="cs-select cs-skin-border maxi ">
+														<option value="apts" selected>Apts</option>
+														
+														<option value="2">2 Звезды</option>
+														<option value="3">3 Звезды</option>
+														<option value="4">4 Звезды</option>
+														<option value="5">5 Звезд</option>
+														
+													</select>
+												</section>
+											</div>
+
+											<div class="ol-xxs-12 col-xs-6 mt ">
+												<section>
+													<label for="class">Тип питания </label>
+													<select class="cs-select cs-skin-border maxi ">
+														
+														<option value="RO" selected="">Без питания</option>
+														<option value="BB">Только завтрак</option>
+														<option value="HB">Завтрак,ужин</option>
+														<option value="FB">Завтрак,обед,ужин</option>
+														<option value="AI">Все включено</option>
+														
+													</select>
+												</section>
+											</div>
+											
+											
+											
+											<div class="ol-xxs-6 col-xs-4 mt ">
+												<section>
+													<label for="class">Количество ночей от </label>
+													<select class="cs-select cs-skin-border  ">
+														<option value="1" selected>1</option>
+														
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="4">5</option>
+														<option value="4">6</option>
+														<option value="4">7</option>
+														<option value="4">8</option>
+													</select>
+												</section>
+											</div>
+											<div class="ol-xxs-6 col-xs-2 mt ">
+												<section>
+													<label for="class"> до </label>
+													<select class="cs-select cs-skin-border">
+														<option value="7"  selected>7</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="4">5</option>
+														<option value="4">6</option>
+														
+														<option value="4">8</option>
+													</select>
+												</section>
+											</div>
+
+											
+
+											<div class="col-xxs-6 col-xs-3 mt">
+												<section>
+													<label for="class">Взрослые</label>
+													<select class="cs-select cs-skin-border">
+														<option value="2"  selected>2</option>
+														<option value="1">1</option>
+														
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="4">5</option>
+														<option value="4">6</option>
+													</select>
+												</section>
+											</div>
+
+											<div class="col-xxs-6 col-xs-3 mt">
+												<section>
+													<label for="class">Дети</label>
+													<select class="cs-select cs-skin-border">
+														<option value="0"  selected>0</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+													</select>
+												</section>
+											</div>
+
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">Стоимость,руб. от</label>
+													<input type="text" class="form-control" id="priceot" placeholder="0"/>
+												</div>
+											</div>
+
+											<div class="col-xxs-12 col-xs-6 mt">
+												<div class="input-field">
+													<label for="from">до</label>
+													<input type="text" class="form-control" id="pricedo" placeholder="150 000"/>
+												</div>
+											</div>
+
+
+											<div class="col-xs-12">
+												<input type="submit" class="btn btn-primary btn-block" value="Поиск">
+											</div>
+										</div>
+									 </div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
