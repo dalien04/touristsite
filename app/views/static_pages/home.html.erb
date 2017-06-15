@@ -1,123 +1,8 @@
 <% provide(:title, 'Home') %>
 <div class="home-table">
-  <%# 
-  <h1>Авторизация</h1> %>
- <%#  <%= link_to "Войти в систему", signup_path, class: "btn btn-large btn-primary" %>
-
-
-
- 
- <div id="modal" class="popupContainer" style="display:none;">
-                <header class="popupHeader">
-                        <span class="header_title">Авторизация</span>
-                        <span class="modal_close"><i class="fa fa-times"></i></span>
-                </header>
-
-                <section class="popupBody">
-                        <!-- Social Login -->
-                        <div class="social_login">
-
-                                <div class="action_btns">
-                                        <div class="one_half"><%= link_to 'Войти', new_user_session_path , id:"login_form", class:"btn" %>
-                                        <div class="one_half last"><a href="#" id="register_form" class="btn">Регистрация</a></div>
-                                </div>
-                        </div>
-
-                        <!-- Username & Password Login form -->
-                        <div class="user_login">
-                                <form>
-                                        <label>Email</label>
-                                        <input type="text" />
-                                        <br />
-
-                                        <label>Пароль</label>
-                                        <input type="password" />
-                                        
-
-                                        
-                                        <div class="checkbox">
-                                                <input id="remember" type="checkbox" />
-                                                <label for="remember">Запомнить пароль</label>
-                                        </div>
-                                        <br />
-                                        <a href="#" class="forgot_password">Забыли пароль?</a>
-
-
-                                        <div class="action_btns">
-                                                <div class="one_half"><a href="#" class="btn btn_red back_btn"><i class="fa fa-angle-double-left"></i> Назад</a></div>
-                                                <div class="one_half last"><a href="#" class="btn btn_red">Войти</a></div>
-                                        </div>
-                                </form>
-
-                                
-                        </div>
-
-                        <!-- Register Form -->
-                        <div class="user_register">
-                                <form>
-                                        <label>Имя</label>
-                                        <input type="text" />
-                                        <br />
-
-                                        <label>Фамилия</label>
-                                        <input type="text" />
-                                        <br />
-
-                                        <label>Email</label>
-                                        <input type="email" />
-                                        <br />
-
-                                        <label>Пароль</label>
-                                        <input type="password" />
-                                        <br />
-
-                                        <label>Подтверждение пароль</label>
-                                        <input type="password" />
-    									<br />
-                                        
-
-                                        <div class="action_btns">
-                                                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Назад</a></div>
-                                                <div class="one_half last"><a href="#" class="btn btn_red">Зарегистрировать</a></div>
-                                        </div>
-                                </form>
-                        </div>
-                </section>
-        </div>
-        <script type="text/javascript">
-    $("#modal_trigger").leanModal({top : 70, overlay : 0.6, closeButton: ".modal_close" });
-
-    $(function(){
-        // Calling Login Form
-        $("#login_form").click(function(){
-            $(".social_login").hide();
-            $(".user_login").show();
-            return false;
-        });
-
-        // Calling Register Form
-        $("#register_form").click(function(){
-            $(".social_login").hide();
-            $(".user_register").show();
-            $(".header_title").text('Регистрация');
-            return false;
-        });
-
-        // Going back to Social Forms
-        $(".back_btn").click(function(){
-            $(".user_login").hide();
-            $(".user_register").hide();
-            $(".social_login").show();
-            $(".header_title").text('Авторизация');
-            return false;
-        });
-
-    })
-</script>
-
 <div class="fh5co-hero">
 			<div class="fh5co-overlay"></div>
-			<div class="fh5co-cover" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+			<div class="fh5co-cover" >
 				<div class="desc">
 					<div class="container">
 						<div class="row">
@@ -237,7 +122,8 @@
 											</div>
 
 											<div class="col-xs-12">
-												<input type="submit" class="btn btn-primary btn-block" value="Поиск">
+												
+												<%= link_to 'Поиск', restplaces_path,:class => 'btn btn-primary btn-block'%>
 											</div>
 										</div>
 									 </div>

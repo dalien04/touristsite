@@ -1,0 +1,2 @@
+module RestplacesHelper
+end

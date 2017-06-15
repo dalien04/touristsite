@@ -1,7 +1,7 @@
-<table class="table">
+<table class="table table-responsive">
 <thead>
 	<tr>
-		<th>Заявка Номер</th>
+		<th>Заявка ID</th>
 		<th><%= @request.id %></th>
 	</tr>
 
@@ -10,6 +10,21 @@
 	<tr>
 		<td>Дата открытия</td>
 		<td><%= @request.open_date %></td>
+	</tr>
+
+	<tr>
+		<td>asdтия</td>
+		<td><%= @request.tourist_id %></td>
+	</tr>
+
+	<tr>
+		<td>Дasdя</td>
+		<td><%= @request.operator_id %></td>
+	</tr>
+
+	<tr>
+		<td>Дата открasdasddaadытия</td>
+		<td><%= @request.tour_id %></td>
 	</tr>
 
 	<tr>
@@ -30,3 +45,6 @@
 
 
 </table>
+
+<%= link_to 'Редактировать' ,edit_request_path(@request),:class => 'btn btn-mini'  %>
+<%= link_to 'Назад', requests_path,:class => 'btn btn-mini'  %>

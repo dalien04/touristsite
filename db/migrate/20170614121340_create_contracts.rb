@@ -9,7 +9,7 @@ class CreateContracts < ActiveRecord::Migration
     	t.money :cost, null:false
       t.string :dop_info,null: false, :limit => 100
       t.string :payment,null: false, :limit => 20
-      t.references :request, index: true, null: false
+      #t.references :request, index: true, null: false
       t.timestamps null: false
     end
   end

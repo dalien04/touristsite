@@ -8,21 +8,21 @@
       <div class="modal-body">
         <%= form_for(User.new, url: registration_path(:user)) do |f| %>
             <div>
-              <%= f.label :email %><br />
+              <%= f.label :email, "Email"  %><br />
               <%= f.email_field :email, autofocus: true %>
             </div>
 
             <div>
-              <%= f.label :password %><br />
+              <%= f.label :password, "Пароль"  %><br />
               <%= f.password_field :password, autocomplete: "off" %>
             </div>
 
             <div>
-              <%= f.label :password_confirmation %><br />
+              <%= f.label :password_confirmation, "Повторите пароль"  %><br />
               <%= f.password_field :password_confirmation, autocomplete: "off" %>
             </div>
 
-            <div><%= f.submit "Sign up" %></div>
+            <div><%= f.submit "Зарегистрироваться" %></div>
         <% end %>
       </div>
       <div class="modal-footer">

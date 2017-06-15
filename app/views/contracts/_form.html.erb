@@ -1,0 +1,18 @@
+<%= simple_form_for(@contract) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+	<%= f.input :number_contract,:label => "Номер договора"  %>
+	<%= f.input :status,:label => "Статус" %>
+	<%= f.input :open_date,:label => "Дата открытия"  %>
+	<%= f.input :dop_info,:label => "Дополнительная информация" %>
+	<%= f.input :cost,:label => "Стоимость",as: :string %>
+	<%= f.input :payment,:label => "Способ оплаты" %>
+	<%= f.input :pay_date,:label => "Дата оплаты" %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit,:class => 'btn btn-mini'%>
+  </div>
+<% end %>

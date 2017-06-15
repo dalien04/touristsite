@@ -1,32 +1,22 @@
-<table class="table">
-<thead>
-	<tr>
-		<th>
-			Список заявок
-		</th>
-	</tr>
+<table class="table ">
+  <thead>
+    <tr>
+      <th id='titl'>Список заявок</th>
+    </tr>
+  </thead>
 
-</thead>
 <tbody>
-<% @requests.each do |request| %>
-	<tr>
-		<td>
-			Номер заявки: <%= request.id %>
-		</td>
-
-		<td>
-			<%= link_to 'Редактировать' ,edit_request_path(request) %>
-		</td>
-
-		<td>
-			<%= link_to 'Удалить' ,request_path(request), method: :delete, data: {confirm: 'Вы уверены?'}  %>
-		</td>
-	</tr>
-<% end %>
+	<% @requests.each do |request| %>
+		<tr>
+			<td id='titl'>ID Заявки: <%= request.id %></td>
+			<td><%= link_to 'Просмотр', request,:class => 'btn btn-mini'%>
+				<%= link_to 'Редактировать' ,edit_request_path(request),:class => 'btn btn-mini'  %>
+				<%= link_to 'Удалить' ,request_path(request), method: :delete, data: {confirm: 'Вы уверены?'} ,:class => 'btn btn-mini' %>
+					
+				</td>
+		</tr>
+	<% end %>
 </tbody>
-
-
 </table>
-
-<p><%= link_to 'Новая заявка' ,new_request_path %></p>
-<p><%= link_to 'Все заявки' ,requests_path %></p>
+</br>
+<%= link_to 'Новая Заявка', new_request_path ,:class => 'btn btn-mini' %>

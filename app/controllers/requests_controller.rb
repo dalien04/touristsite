@@ -49,7 +49,7 @@ class RequestsController < ApplicationController
 
 	private
 	def request_params
-		params[:request].permit(:open_date, :dop_info,:status,:close_date)
+		params[:request].permit(:open_date, :dop_info,:status,:close_date,:tourist_id,:operator_id,:tour_id)
 	end
 
 	def find_request

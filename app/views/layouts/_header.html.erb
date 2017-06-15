@@ -36,32 +36,31 @@
               <li><%= link_to "Home", root_path %></li>
               <li><%= link_to "Поиск тура", tourRequest_path %></li>
               <li><%= link_to "Фотогалерея", photogallery_path%></li>
-              <li><%= link_to "Сотруднику", "#" %></li>
-              <li><%= link_to "Туристу", information_path, id:"form_sub", class:"fh5co-sub-ddown" %>
+
+
+
+
+
+              <li class="dropdown" ><%= link_to "Сотруднику", "#", :'data-toggle' => 'dropdown', :class => 'dropdown-toggle'%>
+                <ul class="dropdown-menu" id = "setupdrop">
+                  <li><%= link_to 'Просмотр заявок', requests_path %></li>
+                  <li><%= link_to 'Просмотр договоров', contracts_path%></li>
+                </ul>
+                </li>
+
+
+
+
+              <li class="dropdown"><%= link_to "Туристу", information_path, :'data-toggle' => 'dropdown', :class => 'dropdown-toggle' %>
+
+                <ul class="dropdown-menu" id = "setupdrop">
+                  <li><%= link_to 'Создать заявку', new_request_path %></li>
+                  <li><%= link_to 'Просмотр договоров', contracts_path%></li>
+                </ul>
+
               </li>
               <li><%= link_to "О компании", about_path %></li>
               
-
-               <%# <a href="vacation.html" class="fh5co-sub-ddown">Vacations</a>
-                <ul class="fh5co-sub-menu">
-                  <li><a href="#">Family</a></li>
-                  <li><a href="#">CSS3 &amp; HTML5</a></li>
-                  <li><a href="#">Angular JS</a></li>
-                  <li><a href="#">Node JS</a></li>
-                  <li><a href="#">Django &amp; Python</a></li>
-                </ul>
-
-
-                <ul class="fh5co-sub-menu">
-                  <li><a href="#">Family</a></li>
-                  <li><a href="#">CSS3 &amp; HTML5</a></li>
-                  <li><a href="#">Angular JS</a></li>
-                  <li><a href="#">Node JS</a></li>
-                  <li><a href="#">Django &amp; Python</a></li>
-                </ul>
-
-
-              %>
             </ul>
           </div>
 

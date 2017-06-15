@@ -1,10 +1,18 @@
 <%= simple_form_for(@request) do |f| %>
 <%= f.error_notification %>
+<div class="form-inputs">
 <%= f.input :open_date,:label => "Дата открытия"  %>
 <%= f.input :close_date,:label => "Дата закрытия" %>
 <%= f.input :dop_info,:label => "Дополнительная информация"  %>
 <%= f.input :status,:label => "Статус" %>
+<%= f.input :tourist_id,:label => "tourist_id" %>
+<%= f.input :operator_id,:label => "operator_id" %>
+<%= f.input :tour_id,:label => "tour_id" %>
 
+ </div>
 
-<%= f.button :submit %>
+  <div class="form-actions">
+  
+<%= f.button :submit,:class => 'btn btn-mini'%>
+  </div>
 <% end %>

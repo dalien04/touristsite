@@ -1,0 +1,23 @@
+</br>
+<table class="table  ">
+  <thead>
+    <tr>
+      <th id='titl'>Список договоров</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contracts.each do |contract| %>
+      <tr>
+      <td id='titl'>ID Договора: <%= contract.id %></td>
+                        
+        <td><%= link_to 'Просмотр', contract,:class => 'btn btn-mini'%>
+        <%= link_to 'Редактировать', edit_contract_path(contract),:class => 'btn btn-mini' %>
+        <%= link_to 'Удалить', contract, method: :delete, data: { confirm: 'Вы уверены?' },:class => 'btn btn-mini' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</br>
+
+<%= link_to 'Новый договор', new_contract_path ,:class => 'btn btn-mini' %>

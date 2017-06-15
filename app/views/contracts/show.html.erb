@@ -1,0 +1,51 @@
+<table class=" table table-responsive">
+<thead>
+	<tr>
+		<th>Договор ID</th>
+		<th><%= @contract.id %></th>
+	</tr>
+
+</thead>
+<tbody>
+	<tr>
+		<td>Номер Договора</td>
+		<td><%= @contract.number_contract %></td>
+	</tr>
+
+	<tr>
+		<td>Статус</td>
+		<td><%= @contract.status %></td>
+	</tr>
+
+	<tr>
+		<td>Дата открытия</td>
+		<td><%= @contract.open_date %></td>
+	</tr>
+
+	<tr>
+		<td>Дополнительная информация</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+
+	<tr>
+		<td>Стоимость</td>
+		<td><%= @contract.cost %></td>
+	</tr>
+
+	<tr>
+		<td>Способ оплаты</td>
+		<td><%= @contract.payment %></td>
+	</tr>
+
+	<tr>
+		<td>Дата оплаты</td>
+		<td><%= @contract.pay_date %></td>
+	</tr>
+</tbody>
+
+
+</table>
+
+
+<%= link_to 'Редактировать', edit_contract_path(@contract),:class => 'btn btn-mini'  %> |
+<%= link_to 'Назад', contracts_path,:class => 'btn btn-mini'  %>
