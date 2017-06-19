@@ -16,7 +16,7 @@ class Ability
     end
     #клиент может управлять своими заявками и создавать отзывы
     if user.client?
-        can :manage , Request , :created_by: user.id, :user_id => user.id
+        can :manage , Request , :created_by: user.id
         can :create , Review 
     end
   end
