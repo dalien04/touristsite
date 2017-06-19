@@ -2,7 +2,7 @@ class Request < ActiveRecord::Base
 	has_one :tour
 	belongs_to :tourist
 	belongs_to :contract
-	as_and_belongs_to_many :operators
+	has_and_belongs_to_many :operators
 
 	validates :open_date,:close_date,:dop_info,:status, :presence => true
   validates :tourist_id, :presence => true
