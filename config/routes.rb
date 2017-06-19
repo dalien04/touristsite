@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :tours
-  resources :restplaces
-  resources :contracts
+  
   root 'static_pages#home'
   
   match '/help', to: 'static_pages#help', via: 'get'  
@@ -17,12 +15,12 @@ Rails.application.routes.draw do
   match '/faq', to: 'static_pages#faq', via: 'get' 
   
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout'}
- devise_scope :user do
-  get 'sign_in', to: 'devise/sessions#new'
-end
 
-resources :requests
-resources :contracts
+  resources :requests
+  resources :contracts
+  resources :tours
+  resources :restplaces
+  resources :contracts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

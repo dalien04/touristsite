@@ -7,13 +7,10 @@ class CreateRequests < ActiveRecord::Migration
     	t.string :dop_info, :limit => 100 
     	t.integer :status, null:false
     	t.references :tourist, index: true, null: false
-    	t.references :operator, index: true, null: false
+    	t.references :operator, index: true
     	t.references :tour, index: true, null: false
 
       t.timestamps null: false
     end
-    execute "
-      ALTER TABLE requests ADD FOREIGN KEY(tourist_id) REFERENCES tourists(id)
-    "
   end
 end

@@ -266,6 +266,7 @@ footer .footer-block1 li a:hover, footer .footer-block1 li a:active, footer .foo
 
 .toptour{
   padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 .tabulation {
@@ -451,15 +452,111 @@ div.cs-select {
   box-sizing: border-box;
 }
 
-.debug_dump {
-  clear: both;
-  float: left;
-  width: 100%;
-  margin-top: 45px;
-  @include box_sizing;
-}
 
 
 /* forms */
 
 
+.desc{
+   width:1000px;
+   margin:0 auto;
+}
+
+
+
+.tourss {
+    overflow: hidden;
+    margin-bottom: 9px;
+    background: #F1ECEB;
+    color: #69696C;
+    
+
+}
+
+.new-tour, .new-tour > div {
+    height: 131px;
+    box-sizing: border-box;
+}
+
+.new-tour {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+ padding: 0;
+ margin: 0 auto;
+ border: outset 5px #F78536;
+ font-weight: bold;
+  }
+
+.new-tour > div {
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+}
+
+div.new-tour #abbvc  {
+    position: absolute;
+    z-index: 15;
+    width: 175px;
+    height: 120px;
+    display: block;
+}
+.new-tour > div {
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+}
+.new-tour-info {
+    padding: 18px 0 20px 0;
+    box-sizing: border-box;
+    min-width: 130px;
+    text-align: center;
+    position: relative;
+    margin-left: 70px;
+
+}
+
+.nt-fullwidth .new-tour-info, .nt-fullwidth .new-tour-people {
+    width: 192px;
+}
+
+.new-tour-resort, .new-tour-nights, .new-tour-dates {
+    padding-bottom: 4px;
+}
+.new-tour-nights {
+   
+}
+
+.nt-fullwidth .new-tour-hotel {
+    width: 393px;
+}
+
+.new-tour-hotel > div, .new-tour-hotel > a {
+    margin: 0 auto;
+}
+
+.new-tour-name {
+    font-weight: bold;
+    font-size: 30px;
+    color: #F78536;
+    padding-bottom: 1px;
+}
+
+.nt-fullwidth .new-tour-buy {
+    width: 186px;
+}
+.new-tour-buy {
+    text-align: center;
+   padding-top: 5px; 
+}
+
+.new-tour-money{
+  font-size: 30px;
+   color: #F78536;
+   font-weight: bold;
+}

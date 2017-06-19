@@ -29,9 +29,9 @@ ActiveRecord::Schema.define(version: 20170614121602) do
     t.string   "number_contract", limit: 20,            null: false
     t.integer  "status",                                null: false
     t.date     "open_date",                             null: false
-    t.date     "pay_date",                              null: false
+    t.date     "pay_date"
     t.money    "cost",                        scale: 2, null: false
-    t.string   "dop_info",        limit: 100,           null: false
+    t.string   "dop_info",        limit: 100
     t.string   "payment",         limit: 20,            null: false
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
@@ -44,16 +44,16 @@ ActiveRecord::Schema.define(version: 20170614121602) do
   end
 
   create_table "hotels", force: :cascade do |t|
-    t.integer  "stars",                    null: false
+    t.integer  "stars"
     t.string   "hotel_name",    limit: 50, null: false
     t.string   "rooms",         limit: 20, null: false
-    t.string   "food",          limit: 20, null: false
-    t.string   "internet",      limit: 20, null: false
-    t.string   "parking",       limit: 10, null: false
-    t.string   "sport",         limit: 50, null: false
-    t.string   "entertainment", limit: 50, null: false
-    t.string   "beach",         limit: 20, null: false
-    t.string   "service",       limit: 50, null: false
+    t.string   "food",          limit: 20
+    t.string   "internet",      limit: 20
+    t.string   "parking",       limit: 10
+    t.string   "sport",         limit: 50
+    t.string   "entertainment", limit: 50
+    t.string   "beach",         limit: 20
+    t.string   "service",       limit: 50
     t.integer  "city_id",                  null: false
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -79,7 +79,7 @@ ActiveRecord::Schema.define(version: 20170614121602) do
     t.string   "dop_info",    limit: 100
     t.integer  "status",                  null: false
     t.integer  "tourist_id",              null: false
-    t.integer  "operator_id",             null: false
+    t.integer  "operator_id"
     t.integer  "tour_id",                 null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
@@ -120,14 +120,14 @@ ActiveRecord::Schema.define(version: 20170614121602) do
     t.integer  "sex",                              null: false
     t.string   "number_telefon",       limit: 16,  null: false
     t.string   "email",                limit: 30,  null: false
-    t.string   "number_interpassport", limit: 30,  null: false
+    t.string   "number_interpassport", limit: 30
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
   end
 
   create_table "tours", force: :cascade do |t|
     t.integer  "adult",                  null: false
-    t.integer  "children",               null: false
+    t.integer  "children"
     t.date     "start_date",             null: false
     t.date     "end_date",               null: false
     t.money    "cost",         scale: 2, null: false
@@ -156,5 +156,4 @@ ActiveRecord::Schema.define(version: 20170614121602) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  add_foreign_key "requests", "tourists", name: "requests_tourist_id_fkey"
 end

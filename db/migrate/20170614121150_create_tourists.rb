@@ -9,7 +9,7 @@ class CreateTourists < ActiveRecord::Migration
 			t.integer :sex, null:false
 			t.string :number_telefon, null:false, :limit => 16
 			t.string :email, null:false, :limit => 30
-			t.string :number_interpassport, null:false, :limit => 30
+			t.string :number_interpassport, :limit => 30
 	   
       t.timestamps null: false
     end

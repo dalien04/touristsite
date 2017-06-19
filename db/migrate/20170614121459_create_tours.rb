@@ -3,7 +3,7 @@ class CreateTours < ActiveRecord::Migration
     create_table :tours do |t|
 
     	t.integer :adult, null:false
-    	t.integer :children, null:false
+    	t.integer :children
     	t.date :start_date, null:false
     	t.date :end_date, null:false
     	t.money :cost, null:false
