@@ -1,13 +1,17 @@
 <%= simple_form_for(@request) do |f| %>
 <%= f.error_notification %>
 <div class="form-inputs">
-<%= f.input :open_date,:label => "Дата открытия"  %>
-<%= f.input :dop_info,:label => "Дополнительная информация"  %>
+<%= f.input :open_date,:label => "Дата создания"  %>
+<%= f.input :dop_info,:label => "Старана"  %>
+<%= f.input :dop_info,:label => "Город"  %>
+<%= f.input :dop_info,:label => "Турист"  %>
+<%= f.input :dop_info,:label => "Отель"  %>
+<%= f.input :status,:label => "Кол-во детей" %>
+<%= f.input :dop_info,:label => "Сотрудник"  %>
+<%= f.input :status,:label => "Номер путевки" %>
+<%= f.input :dop_info,:label => "Стоимость, руб."  %>
 <%= f.input :status,:label => "Статус" %>
-<%= f.input :tourist_id,:label => "ID туриста" %>
-<%= f.input :operator_id,:label => "ID оператора" %>
-<%= f.input :tour_id,:label => "ID путевки" %>
-<%= f.input :close_date,:label => "Дата закрытия"  %>
+<%= f.input :dop_info,:label => "Доп. информация"  %>
  </div>
 
   <div class="form-actions">

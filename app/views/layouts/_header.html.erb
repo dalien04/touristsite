@@ -3,64 +3,46 @@
       
         <div class="nav-header">
           <div class="top-logotip col-md-4 col-sm-4 col-xs-12">
-          <%= link_to "Мирабела-Тур", root_path, id: "logo" %>
+          <%= link_to "Электродвигатели", root_path, id: "logo" %>
           </div>
 
-           <div class="top-informat col-md-4 col-sm-4 col-xs-12">
-            <p> Часы работы </p>
-            <p>С 9:00 до 20:00</p>
-            <p> Телефон</p>
-            <p>+7 (909) 960 35 11</p>
-            </div>
-
-            <div class="top-spisok col-md-4 col-sm-4 col-xs-12">
-              <ul class="nav " id="firstul">
-                
-                <li>
-                <% if current_user %>
-                  <%= "Привет, #{current_user.email}" %>
-                  <%= link_to "Выйти", destroy_user_session_path, :method => :delete %>
-                <% else %>
-                  <%= link_to "Авторизация", "#sign_in", "data-toggle" => "modal" %>
-                  
-                  <%= link_to "Регистрация", "#sign_up", "data-toggle" => "modal" %>
-                <% end %>
-                </li>
-                <li><%= link_to "Помощь", "#" %></li>
-               </ul>  
-            </div>
-
-           
-            <div class="top-menu ">
+           <div class="top-menu col-md-8 col-sm-8 col-xs-12">
              <ul class="nav pull-left" id="secondul">
-              <li><%= link_to "Home", root_path %></li>
-              <li><%= link_to "Поиск тура", tourRequest_path %></li>
-              <li><%= link_to "Фотогалерея", photogallery_path%></li>
-
-
-
-
-
-             
-
-
-
-              <li class="dropdown"><%= link_to "Туристу", information_path, :'data-toggle' => 'dropdown', :class => 'dropdown-toggle' %>
+              
+              <li><%= link_to "Конфигуратор", config_path%></li>
+              <li class="dropdown"><%= link_to "Материалы", config_path, :'data-toggle' => 'dropdown', :class => 'dropdown-toggle' %>
 
                 <ul class="dropdown-menu" id = "setupdrop">
-                  <li><%= link_to 'Создать заявку', new_request_path %></li>
-                  <li><%= link_to 'Просмотр договоров', contracts_path%></li>
+                  <li><%= link_to 'Электроприводы', elmotor_info_path %></li>
+                  <li><%= link_to 'Электродвигатели', edrive_info_path%></li>
+                   <li><%= link_to "Редукторы", reducer_info_path %></li>
                 </ul>
 
               </li>
-              <li><%= link_to "О компании", about_path %></li>
-              
+
+
+
+
+              <li class="dropdown"><%= link_to "Приборы", information_path, :'data-toggle' => 'dropdown', :class => 'dropdown-toggle' %>
+
+                <ul class="dropdown-menu" id = "setupdrop">
+                 <li><%= link_to 'Электроприводы', elmotor_info_path %></li>
+                  <li><%= link_to 'Электродвигатели', edrive_info_path%></li>
+                   <li><%= link_to "Редукторы", reducers_path %></li>
+                </ul>
+
+              </li>
+              <li><%= link_to "Библиотека", bibliotek_path%></li>
             </ul>
+
+            
+          </div>
+              
           </div>
 
+           
 
 
 
         </div>
-      </div>
     </header>

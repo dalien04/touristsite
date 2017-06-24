@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      
+      <th >Редуктор</th>
+      <th>Модель</th>
+       <th>Мощность</th>
+        <th>Крутящий момент входного вала</th>
+         <th>Крутящий момент выходного вала</th>
+          <th>Степень защиты</th>
+          <th>Масса</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reducers.each do |reducer| %>
+      <tr>
+        <td>ID Редуктора: <%= reducer.id %></td>
+        <td><%= reducer.model %></td>
+         <td><%= reducer.powers %></td>
+          <td><%= reducer.input_type %></td>
+           <td><%= reducer.output_type %></td>
+            <td><%= reducer.ratio %></td>
+             <td><%= reducer.ip %></td>
+              <td><%= reducer.volume %></td>
+
+        
+        <td><%= link_to 'Edit', edit_reducer_path(reducer) %></td>
+        <td><%= link_to 'Destroy', reducer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reducer', new_reducer_path %>

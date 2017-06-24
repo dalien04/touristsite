@@ -1,18 +1,25 @@
 Rails.application.routes.draw do
 
   
+  resources :elmotors
+  resources :edrives
+  resources :reducers
   root 'static_pages#home'
   
   match '/help', to: 'static_pages#help', via: 'get'  
   match '/about', to: 'static_pages#about', via: 'get' 
   match '/contact', to: 'static_pages#contact', via: 'get'  
   match '/reviews', to: 'static_pages#reviews', via: 'get'
-  match '/photogallery', to: 'static_pages#photogallery', via: 'get' 
+  match '/bibliotek', to: 'static_pages#bibliotek', via: 'get' 
   match '/information', to: 'static_pages#information', via: 'get' 
   match '/tourRequest', to: 'static_pages#tourRequest', via: 'get' 
   match '/actions', to: 'static_pages#actions', via: 'get' 
   match '/checkstatus', to: 'static_pages#checkstatus', via: 'get' 
   match '/faq', to: 'static_pages#faq', via: 'get' 
+  match '/reducer_info', to: 'static_pages#reducer_info', via: 'get' 
+  match '/edrive_info', to: 'static_pages#edrive_info', via: 'get' 
+  match '/elmotor_info', to: 'static_pages#elmotor_info', via: 'get' 
+  match '/config', to: 'static_pages#config', via: 'get' 
   
   devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout'}
 
@@ -21,6 +28,7 @@ Rails.application.routes.draw do
   resources :tours
   resources :restplaces
   resources :contracts
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

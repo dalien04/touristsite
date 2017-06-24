@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170614121602) do
+ActiveRecord::Schema.define(version: 20170624010159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,16 @@ ActiveRecord::Schema.define(version: 20170614121602) do
     t.string   "country_name", limit: 20, null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+  end
+
+  create_table "edrives", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "elmotors", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "hotels", force: :cascade do |t|
@@ -73,14 +83,26 @@ ActiveRecord::Schema.define(version: 20170614121602) do
     t.datetime "updated_at",                  null: false
   end
 
+  create_table "reducers", force: :cascade do |t|
+    t.string   "model",       null: false
+    t.string   "powers",      null: false
+    t.string   "input_type",  null: false
+    t.string   "output_type", null: false
+    t.string   "ratio",       null: false
+    t.string   "ip",          null: false
+    t.string   "volume",      null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "requests", force: :cascade do |t|
     t.date     "open_date",               null: false
     t.date     "close_date"
     t.string   "dop_info",    limit: 100
     t.integer  "status",                  null: false
-    t.integer  "tourist_id",              null: false
+    t.integer  "tourist_id"
     t.integer  "operator_id"
-    t.integer  "tour_id",                 null: false
+    t.integer  "tour_id"
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end

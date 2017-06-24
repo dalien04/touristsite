@@ -1,23 +1,31 @@
+<h1 id='titl1'>Список заявок</h1>
 </br>
-<table class="table  ">
+<table class="table">
   <thead>
     <tr>
-      <th id='titl'>Список договоров</th>
+      <th id='titl'>Список заявок</th>
+      <th id='titl'>Дата создания</th>
+      <th id='titl'>Турист</th>
+      <th id='titl'>Сотрудник</th>
+      <th id='titl'>Статус</th>
     </tr>
   </thead>
 
   <tbody>
     <% @contracts.each do |contract| %>
       <tr>
-      <td id='titl'>ID Договора: <%= contract.id %></td>
-                        
-        <td><%= link_to 'Просмотр', contract,:class => 'btn btn-mini'%>
-        <%= link_to 'Редактировать', edit_contract_path(contract),:class => 'btn btn-mini' %>
-        <%= link_to 'Удалить', contract, method: :delete, data: { confirm: 'Вы уверены?' },:class => 'btn btn-mini' %></td>
+      <td id='titl0'>Номер # <%= contract.id %></td>
+      <td id='titl0'> <%= contract.open_date %></td>
+      <td id='titl0'> <%= contract.dop_info %></td>
+      <td id='titl0'> <%= contract.dop_info %></td>
+      <td id='titl0'><%= contract.status %></td>    
+        <td><%= link_to 'Просмотр', contract,:class => 'btn btn-mini'%></td>
+        <td><%= link_to 'Редактировать', edit_contract_path(contract),:class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Удалить', contract, method: :delete, data: { confirm: 'Вы уверены?' },:class => 'btn btn-mini' %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 </br>
 
-<%= link_to 'Новый договор', new_contract_path ,:class => 'btn btn-mini' %>
+<%= link_to 'Новая заявка', new_contract_path ,:class => 'btn btn-mini' %>

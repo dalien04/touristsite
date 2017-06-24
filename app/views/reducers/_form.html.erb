@@ -1,0 +1,17 @@
+<%= simple_form_for(@reducer) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  <%= f.input :model,:label => "Модель"  %>
+<%= f.input :powers,:label => "Мощность"  %>
+<%= f.input :input_type,:label => "Крутящий момент входного вала"  %>
+<%= f.input :output_type,:label => "Крутящий момент выходного вала"  %>
+<%= f.input :ratio,:label => "Напряжение"  %>
+<%= f.input :ip,:label => "Степень защиты" %>
+<%= f.input :volume,:label => "Масса"  %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

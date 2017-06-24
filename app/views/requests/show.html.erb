@@ -1,19 +1,57 @@
 <table class="table table-responsive">
 <thead>
 	<tr>
-		<th>Заявка ID</th>
-		<th><%= @request.id %></th>
+		<th>Номер #</th>
+		<th><%= @contract.id %></th>
 	</tr>
 
 </thead>
 <tbody>
 	<tr>
-		<td>Дата открытия</td>
-		<td><%= @request.open_date %></td>
+		<td>Дата создания</td>
+		<td><%= @contract.open_date %></td>
 	</tr>
 	<tr>
-		<td>Дополнительная информация</td>
-		<td><%= @request.dop_info %></td>
+		<td>Страна</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+
+	<tr>
+		<td>Город</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+	<tr>
+		<td>Турист</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+	<tr>
+		<td>Отель</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+
+	<tr>
+		<td>Кол-во взрослых</td>
+		<td><%= @contract.status %></td>
+	</tr>
+
+	<tr>
+		<td>Кол-во детей</td>
+		<td><%= @contract.status %></td>
+	</tr>
+
+	<tr>
+		<td>Сотрудник</td>
+		<td><%= @contract.dop_info %></td>
+	</tr>
+	
+	<tr>
+		<td>Номер путевки</td>
+		<td><%= @contract.status %></td>
+	</tr>
+
+	<tr>
+		<td>Стоимость</td>
+		<td><%= @contract.dop_info %></td>
 	</tr>
 
 	<tr>
@@ -22,29 +60,13 @@
 	</tr>
 
 	<tr>
-		<td>ID туриста</td>
-		<td><%= @request.tourist_id %></td>
+		<td>Доп. информация</td>
+		<td><%= @contract.dop_info %></td>
 	</tr>
-
-	<tr>
-		<td>ID оператора</td>
-		<td><%= @request.operator_id %></td>
-	</tr>
-
-	<tr>
-		<td>ID путевки</td>
-		<td><%= @request.tour_id %></td>
-	</tr>
-
-	<tr>
-		<td>Дата закрытия</td>
-		<td><%= @request.close_date %></td>
-	</tr>
-	
 </tbody>
 
 
 </table>
 
-<%= link_to 'Редактировать' ,edit_request_path(@request),:class => 'btn btn-mini'  %>
-<%= link_to 'Назад', requests_path,:class => 'btn btn-mini'  %>
+<%= link_to 'Редактировать' ,edit_contract_path(@contract),:class => 'btn btn-mini'  %>
+<%= link_to 'Назад', contracts_path,:class => 'btn btn-mini'  %>

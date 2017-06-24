@@ -6,9 +6,9 @@ class CreateRequests < ActiveRecord::Migration
     	t.date :close_date
     	t.string :dop_info, :limit => 100 
     	t.integer :status, null:false
-    	t.references :tourist, index: true, null: false
+    	t.references :tourist, index: true
     	t.references :operator, index: true
-    	t.references :tour, index: true, null: false
+    	t.references :tour, index: true
 
       t.timestamps null: false
     end

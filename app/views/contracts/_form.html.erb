@@ -1,15 +1,23 @@
 <%= simple_form_for(@contract) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-	<%= f.input :number_contract,:label => "Номер договора"  %>
-	<%= f.input :status,:label => "Статус" %>
-	<%= f.input :open_date,:label => "Дата открытия"  %>
-	<%= f.input :dop_info,:label => "Дополнительная информация" %>
-	<%= f.input :cost,:label => "Стоимость",as: :string %>
-	<%= f.input :payment,:label => "Способ оплаты" %>
-	<%= f.input :pay_date,:label => "Дата оплаты" %>
+  <div class="form-inputs ">
+	<div class="floating-box">
+	<%= f.input :open_date,:label => "Дата создания"  %>
+	<%= f.input :dop_info,:label => "Страна"  %>
+	<%= f.input :dop_info,:label => "Город"  %>
+	<%= f.input :dop_info,:label => "Турист"  %>
+	<%= f.input :dop_info,:label => "Отель"  %>
+	<%= f.input :dop_info,:label => "Сотрудник"  %>
+	</div>
 
+  <div class="floating-box">
+  	<%= f.input :status,:label => "Кол-во взрослых" %>
+	<%= f.input :status,:label => "Кол-во детей" %>
+	<%= f.input :status,:label => "Номер путевки" %>
+	<%= f.input :dop_info,:label => "Стоимость, руб."  %>
+	<%= f.input :status,:label => "Статус" %>
+	<%= f.input :dop_info,:label => "Доп. информация"  %></div>
   </div>
 
   <div class="form-actions">

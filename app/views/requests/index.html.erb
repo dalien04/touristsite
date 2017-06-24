@@ -13,7 +13,7 @@
 			<td id='titl'>ID Заявки: <%= request.id %></td>
 			<td id='titl'> <%= request.open_date %></td>
 			<td id='titl'><%= request.status %></td>
-			<td><%= link_to 'Просмотр', request,:class => 'btn btn-mini'%>
+			<td>
 				<%= link_to 'Редактировать' ,edit_request_path(request),:class => 'btn btn-mini'  %>
 				<%= link_to 'Удалить' ,request_path(request), method: :delete, data: {confirm: 'Вы уверены?'} ,:class => 'btn btn-mini' %>
 					
